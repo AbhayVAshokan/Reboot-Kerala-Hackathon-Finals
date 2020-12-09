@@ -4,7 +4,8 @@
   "description": "An application for connecting teachers with students.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "test": "set NODE_ENV=development&&electron ."
   },
   "keywords": [
     "Electron",
@@ -15,14 +16,14 @@
     "Proctoring",
     "Quiz",
     "ML",
-    "Facial",
-    "expression",
+    "Facial expression",
     "detection"
   ],
   "author": "RiswanaTR, AbhayVAshokan, ShashankMenon, AnnaroseMB, MishaMohan, PrabhavRajeev",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.0.4"
+    "electron": "^11.0.4",
+    "electron-reload": "^1.5.0"
   },
   "dependencies": {}
 }
