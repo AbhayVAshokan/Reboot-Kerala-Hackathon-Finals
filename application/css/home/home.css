@@ -316,13 +316,23 @@ a.menu-link {
     margin-bottom: -7px;
 }
 
-.card-layout {
+/* .card-row-1 {
+    background-color: red;
+}
+
+.card-cell-row-1 {
     position: absolute;
     text-align: center;
     top: 25%;
-    /* left: 0; */
     z-index: 100;
 }
+
+.card-cell-row-2 {
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    z-index: 100;
+} */
 
 #bg-video {
     min-width: 100%;
@@ -427,6 +437,7 @@ section.features .col-4 {
 }
 
 .features-content {
+    z-index: 5;
     position: absolute;
     bottom: 0;
     left: 0;
