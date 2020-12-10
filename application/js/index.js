@@ -1,6 +1,6 @@
 function navigateTo(dest) {
     location.href = dest;
-} 
+}
 
 document.getElementById('misha-btn').onclick = () => navigateTo('../html/login.html');
 document.getElementById('abbas-btn').onclick = () => navigateTo('../html/classroom.html');
