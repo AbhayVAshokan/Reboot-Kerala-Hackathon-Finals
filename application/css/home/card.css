@@ -1,0 +1,66 @@
+.card-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 25%;
+}
+
+.card {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: 'Montserrat''sans-serif';
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -80%;
+    /* height: 40px; */
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.card-join-btn {
+    background-color: yellow;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+
+.title-white {
+    color: white;
+}
+
+.title-black {
+    color: black;
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        flex-direction: column;
+    }
+}

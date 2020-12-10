@@ -1,14 +1,316 @@
+<!-- Home Page -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900">
+
     <title>Home</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home/home.css">
+    <link rel="stylesheet" href="../css/home/card.css">
+    <link rel="stylesheet" href="../css/home/owl.css">
+    <link rel="stylesheet" href="../css/home/lightbox.css">
+    <link rel="stylesheet" href="../css/home/fontawesome.css">
 </head>
 
 <body>
-    <h1>Home Screen</h1>
+
+    <!--header start-->
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+            <img src="../assets/images/logo.png" />
+            <a href="#">Airmeet</a>
+        </div>
+
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+
+        <nav id="menu" class="main-nav" role="navigation">
+            <ul class="main-menu">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Help</a></li>
+                <li><a href="#section3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end -->
+
+
+    <!-- Main banner start -->
+    <div class="card-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card_image"> <img src="https://miro.medium.com/max/2800/0*XzGl-UOYMpAMcvqO.png" />
+                        </div>
+                        <!-- <div class="card-content title-black">
+                            <p>CRYPTOGRAPHY AND NETWORK SECURITY</p>
+                            <p>Attendance</p>
+                            <p>Assignments</p>
+                            <p>Materials</p>
+                            <div class="card-join-btn">Join</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card_image"> <img src="https://miro.medium.com/max/2800/0*XzGl-UOYMpAMcvqO.png" />
+                        </div>
+                        <div class="card_title title-white">
+                            <!-- <p>Computer Graphics</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card_image"> <img src="https://miro.medium.com/max/2800/0*XzGl-UOYMpAMcvqO.png" />
+                        </div>
+                        <div class="card_title title-white">
+                            <!-- <p>Programming Paradigms</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card_image"> <img src="https://miro.medium.com/max/2800/0*XzGl-UOYMpAMcvqO.png" />
+                        </div>
+                        <div class="card_title title-white">
+                            <!-- <p>Computer System Architecture</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card_image"> <img src="https://miro.medium.com/max/2800/0*XzGl-UOYMpAMcvqO.png" />
+                        </div>
+                        <div class="card_title title-white">
+                            <!-- <p>Distrubuted Computing</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card_image"> <img src="https://miro.medium.com/max/2800/0*XzGl-UOYMpAMcvqO.png" />
+                        </div>
+                        <div class="card_title title-white">
+                            <!-- <p>Compiler Design Lab</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section main-banner" id="top" data-section="section1">
+        <video autoplay muted loop id="bg-video">
+            <source src="../assets/images/home/course-video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>Government Engineering College, Thrissur</h6>
+                <h2><em>Your</em> Classroom</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Main banner end -->
+
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <div class="features-post">
+                        <div class="features-content">
+                            <div class="content-show">
+                                <h4><i class="fa fa-pencil"></i>Attendance</h4>
+                            </div>
+                            <div class="content-hide">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                                    posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet
+                                    libero eu, vehicula libero.</p>
+                                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In
+                                    mollis eros a posuere imperdiet.</p>
+                                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="features-post second-features">
+                        <div class="features-content">
+                            <div class="content-show">
+                                <h4><i class="fa fa-graduation-cap"></i>Exams</h4>
+                            </div>
+                            <div class="content-hide">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                                    posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet
+                                    libero eu, vehicula libero.</p>
+                                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In
+                                    mollis eros a posuere imperdiet.</p>
+                                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="features-post third-features">
+                        <div class="features-content">
+                            <div class="content-show">
+                                <h4><i class="fa fa-book"></i>Assignments</h4>
+                            </div>
+                            <div class="content-hide">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                                    posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet
+                                    libero eu, vehicula libero.</p>
+                                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In
+                                    mollis eros a posuere imperdiet.</p>
+                                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="features-post forth-features">
+                        <div class="features-content">
+                            <div class="content-show">
+                                <h4><i class="fa fa-book"></i>Course Materials</h4>
+                            </div>
+                            <div class="content-hide">
+                                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a
+                                    posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet
+                                    libero eu, vehicula libero.</p>
+                                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In
+                                    mollis eros a posuere imperdiet.</p>
+                                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section video" data-section="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>How to use</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="left-content">
+                        <span>Your future is our guarantee</span>
+                        <h4>Watch the video to learn <em>how to use Airmeet</em></h4>
+                        <p>Replace this text with some meaningful stuff later. Its time that the students who got the
+                            evaluation over in the first slot submit their finalized seminar report. Create the seminar
+                            report, get it approved by your guide; then upload the PDF copy to your drive; share it just
+                            like the previous seminar related documents. Add the link to the shared sheet of links
+                            related to seminar. Once you do this, inform me so that I can add it to the department
+                            records. Simultaneously its evaluation will be done by us. Finalized marks of seminar will
+                            be released through course page grade book </p>
+                        <div class="main-button">
+                            <figure>
+                                <a href="../assets/images/home/course-video.mp4" class="play">Watch Now</a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <article class="video-item">
+                        <div class="video-caption">
+                            <h4>How to use Airmeet</h4>
+                        </div>
+                        <figure>
+                            <a href="../assets/images/home/course-video.mp4" class="play"><img src="../assets/images/home/main-thumb.png"></a>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section contact" data-section="section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Let’s Keep In Touch</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <form id="contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.3149234209864!2d76.22247131539517!3d10.55451079247235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7eee301ff400f%3A0x8851e3d8fc9c94f0!2sGovernment%20Engineering%20College!5e0!3m2!1sen!2sin!4v1607585072270!5m2!1sen!2sin" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <i class="fa fa-copyright"></i> Copyright 2020 by Wheeler Buddy | Support:
+                        <a href="https://reboot.asapkerala.gov.in/" rel="sponsored" target="_parent">Reboot Kerala
+                            Hackathon 2020</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/home/isotope.min.js"></script>
+    <script src="../js/home/owl-carousel.js"></script>
+    <script src="../js/home/lightbox.js"></script>
+    <script src="../js/home/tabs.js"></script>
+    <script src="../js/home/video.js"></script>
+    <script src="../js/home/slick-slider.js"></script>
+    <script src="../js/home/custom.js"></script>
+    <script src="../js/home/scroll-control.js"></script>
 </body>
 
 </html>
