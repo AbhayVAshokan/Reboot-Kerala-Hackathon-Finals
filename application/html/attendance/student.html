@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome.4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/attendance/student.css">
+    
+    <title>Attendance</title>
+    <script src="../../vendor/donut/circleDonutChart.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/attendance/student.js"></script>
+
+</head>
+
+<body>
+    <button id="back-btn" class="back-btn btn btn-lg btn-light"><i class="fa fa-angle-left"></i></button>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="d-flex col justify-content-center">
+                <div class="card total-container">
+                    <div class="card-title">Total Attendance</div>
+                    <div id="attendance-donut" class="card-img donut-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row card my-4">
+            <h4 class="card-header text-center">Subjects</h4>
+            <div class="card-body">
+                <div id="subject-container" class="d-flex flex-wrap justify-content-center">
+                    <!-- Inserting subjects -->
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+    <script>
+        require('../../js/attendance/student.js');
+    </script>
+</body>
+
+</html>
