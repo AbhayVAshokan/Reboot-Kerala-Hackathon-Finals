@@ -1,1 +1,6 @@
 application/node_modules
+venv
+application/js/firebase.js
+application/js/speech-to-text.js
+script.sh
+requirements.txt
