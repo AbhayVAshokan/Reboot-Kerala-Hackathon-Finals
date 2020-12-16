@@ -1,14 +1,14 @@
 const path = require('path');
 const {
     app,
+    globalShortcut,
     BrowserWindow
 } = require('electron');
 
 // Function to create the main window
 function createWindow() {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        fullscreen: true,
         title: 'Name of application',
         webPreferences: {
             nodeIntegration: true,
@@ -24,6 +24,14 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
+
+// disable shortcut keys
+app.on('ready', () => {
+    globalShortcut.register('alt+tab', () => {
+        return false;
+    });
+})
+
 
 // macOS requirements
 app.on('window-all-closed', () => {
