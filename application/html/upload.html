@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Upload quiz</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial;
+      color: rgb(214, 26, 26);
+    }
+   
+    /* Modal Styles */
+
+    .modal-backdrop {
+      background-color: rgb(221, 221, 213);
+    }
+
+    .modal-header {
+      background-image: linear-gradient(rgb(36, 253, 181), rgb(6, 91, 148));
+      color: white;
+    }
+    /* Upload plus button */
+    .circle {
+      border-radius: 50px;
+      width: 100px;
+      height: 100px;
+      border-color: white;
+      color: rgb(208, 226, 130);
+      background-color: rgb(89, 142, 255);
+      background-image: linear-gradient(rgb(36, 253, 181), rgb(6, 91, 148));
+      font-size: 70px;
+      align-items: center;
+      padding-top: 0px;
+
+    }
+    /* Question textarea */
+    .Question{
+      width: 100%;
+      height: 100px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-color: rgb(55, 43, 226);
+      border-width: 2px;
+    }
+    /* Option textfield */
+    .option {
+      width: 350px;
+      height: 20px;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-color: rgb(55, 43, 226);
+      border-width: 1px;
+    }
+
+    textarea:focus,
+    textarea:active,
+    input:active,
+    input:focus {
+      outline: none;
+    }
+    /* Upload button position */
+    .centered {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    /* Save button*/
+    .button1 {
+      background-image: linear-gradient(rgb(36, 253, 181), rgb(6, 91, 148));
+    }
+
+    /* Cancel button*/
+    .button0 {
+      background-image: linear-gradient(rgb(244, 255, 143), rgb(255, 108, 63));
+    }
+
+
+    /* Add option button */
+    .button3 {
+      width: 50px;
+      border-radius: 40px;
+      background-color: #ffffff;
+      color: rgb(60, 60, 255);
+      font-weight: bold;
+    }
+
+    /* Delete button*/
+    .button4 {
+      background-color: white;
+      color: red;
+      border-width: 0px;
+    }
+
+    /* Save demo Card*/
+    .quizcard {
+      width: 350px;
+      height: 50px;
+      background-color: rgb(71, 151, 78);
+      margin-top: 150px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- Upload Button -->
+
+  <div class="centered">
+    <button class="circle" data-toggle="modal" data-target="#myModal">
+      <b>+</b>
+    </button>
+    <div id="home">
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upload question</h4>
+        </div>
+        <div class="modal-body">
+          <textarea placeholder="Enter Question" id="Question" class="Question"></textarea>
+          <div id="textboxDiv_1"></div>
+          <div class="container">
+            <div class='element' id='div_1'>
+              <font color="blue" weight="larger"><b>Option</b></font>
+              <button class="button button3 add" id="Add">+</button>
+              Select the Correct answer
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+
+                /* Add text field */
+
+              $(".add").click(function () {
+
+                // last <div> with element class id
+                var lastid = $(".element:last").attr("id");
+                var split_id = lastid.split("_");
+                var nextindex = Number(split_id[1]) + 1;
+
+                // Adding new div container after last occurance of element class
+                $(".element:last").after("<div class='element' id='div_" + nextindex + "'></div>");
+
+                // Adding element to <div>
+                $("#div_" + nextindex).append("<br><input  type='radio'id='txt_" + nextindex + "'/>&nbsp&nbsp<input class='option' type='text' placeholder='Enter option' id='txt_" + nextindex + "'>&nbsp;<button id='remove_" + nextindex + "' class='button4 remove'><i class='fa fa-trash'></i></button>");
+
+              });
+              // Remove element
+              $('.container').on('click', '.remove', function () {
+
+                var id = this.id;
+                var split_id = id.split("_");
+                var deleteindex = split_id[1];
+
+                // Remove <div> with id
+                $("#div_" + deleteindex).remove();
+
+              });
+
+              /*  $("#Save").on("click", function() {  
+                          $("#home").append("<div class='quizcard' id='quizcard'></div>");
+                          document.getElementById("quizcard").innerHTML +=document.getElementById("Question").value;; 
+                          document.getElementById("Question").value =""; 
+                 }); */
+              $("#Cancel").on("click", function () {
+                document.getElementById("Question").value = "";
+              });
+            });  
+          </script>
+          <div class="modal-footer">
+            <button id="Save" class="button button1" data-dismiss="modal">Save</button>
+            <button class="button button0" data-dismiss="modal" id="Cancel">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</body>
+
+</html>

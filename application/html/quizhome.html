@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+     /* Background */
+     .bg {
+      background-color: white;
+      padding-top: 10%;
+    }
+   
+   /* <a> tag properties */
+    .line {
+      text-decoration: none;
+      color: white;
+    }
+
+    .line:hover {
+      text-decoration: none;
+    }
+
+    /*Listing Card*/
+
+    .display-card {
+      background-image: linear-gradient(rgb(150, 255, 220), rgb(52, 30, 133));
+      border-radius: 20px;
+      height: 100px;
+      max-width: 250px;
+      padding-top: 20px;
+      color: WHITE;
+    }
+  </style>
+</head>
+<body class="bg">
+  <div align="center">
+
+    <!--Upload Button-->
+
+    <a class="line" href="upload.html">
+      <div class="display-card">
+        <h1>Upload</h1>
+      </div>
+    </a>
+    <br>
+
+     <!--History Button-->
+
+    <div>
+      <a href="history.html" class="line" target="right">
+        <div class="display-card">
+          <h1>History</h1>
+        </div>
+      </a>
+      <br>
+
+      <!--Test Button-->
+
+      <a href="test.html" class="line" target="right">
+        <div class="display-card">
+          <h1>Test</h1>
+        </div>
+      </a>
+      <br>
+
+      <!--Result Button-->
+
+      <a href="resultpage.html" class="line" target="right">
+        <div class="display-card">
+          <h1>Result</h1>
+        </div>
+      </a>
+      <br>
+    </div>
+  </div>
+</body>
+
+</html>

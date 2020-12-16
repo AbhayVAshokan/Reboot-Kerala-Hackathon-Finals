@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+      color: rgb(191, 204, 114);
+    }
+
+    /* <a> tag property */
+
+    .line {
+      text-decoration: none;
+    }
+
+    /* Button */
+    button:focus {
+      outline: none;
+      border-bottom-color: rgb(10, 159, 245);
+      border-bottom-style: solid;
+
+    }
+
+    .btn-group .button {
+      background-color: transparent;
+      border-bottom: turquoise;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 25px;
+      font: weight 10;
+      cursor: pointer;
+      width: 200px;
+      display: block;
+    }
+
+    .btn-group .button:hover {
+      border-bottom-color: rgb(82, 8, 255);
+      border-bottom-style: solid;
+    }
+
+    .button:active,
+    .button:focus {
+      border-bottom-color: rgb(82, 8, 255);
+      border-bottom-style: solid;
+    }
+
+    /* Split of home screen */
+
+    .split-left {
+      height: 100%;
+      width: 30%;
+      border-color: turquoise;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .split-right {
+      height: 100%;
+      width: 70%;
+      border-color: turquoise;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+    }
+
+    .left {
+      left: 0;
+      background-color: rgb(33, 36, 33);
+      background-image: linear-gradient(rgb(150, 255, 220), rgb(52, 30, 133));
+
+    }
+
+    .right {
+      right: 0;
+      background-image: url(home.jpg);
+      background-repeat: no-repeat;
+    }
+
+   /* Home background image properties */
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .centered img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  
+  <!-- Left part of Screen -->
+
+  <div class="split-left left">
+    <div class="centered">
+      <div class="btn-group">
+    
+         <!-- Quiz button-->
+
+        <a href="quizhome.html" class="line" target="right">
+          <button class="button">
+            <b>QUIZ</b>
+          </button>
+        </a>
+
+         <!-- Materials button-->
+
+        <a href="materialshome.html" class="line" target="right">
+          <button class="button">
+            <b>MATERIALS</b>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+   <!-- Right part of Screen -->
+
+  <iframe class="split-right right" name="right">
+    <div class="centered">
+    </div>
+  </iframe>
+
+</body>
+
+</html>

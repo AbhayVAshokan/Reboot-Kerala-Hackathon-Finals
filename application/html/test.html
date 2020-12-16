@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            color: rgb(191, 204, 114);
+        }
+
+        /* Quiz card */
+        .quiz-card {
+            position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: rgb(7, 15, 31);
+            max-width: 250px;
+            min-height: 400px;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: -1rem 0rem 3rem #000;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .question {
+            top: 0px;
+            color: rgb(255, 242, 242);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .answer {
+            font-size: 20px;
+            color: rgb(30, 177, 54);
+            padding: 20px;
+        }
+
+        /* Result Image */
+        .image {
+            border-radius: 200px;
+        }
+
+        .image2 {
+            height: 150px;
+            width: 150px;
+        }
+
+        .imageclass {
+            width: 100%;
+            align-content: center;
+            padding: 6rem;
+        }
+
+        /* Attempt button */
+
+        .button {
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 15px 32px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: rgb(53, 53, 233);
+        }
+
+        .attempt {
+            padding-top: 30%;
+            padding-left: 45%;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Attempt button -->
+    <div class="attempt">
+        <button class="button button1" data-toggle="modal" data-target="#myModal">Attempt</button>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-body">
+                <div class="quiz-card" id="Card">
+                    <div class="question">Which of the following is not a
+                        logical data-base structure?</div>
+                    <div class="answer">
+                        <br>
+                        <input type="radio" name="option" />tree<br>
+                        <br>
+                        <input type="radio" name="option" /> relational<br>
+                        <br>
+                        <input type="radio" name="option" /> network <br>
+                        <br>
+                        <input type="radio" name="option" id="Ans" /> chain<br>
+                    </div>
+                    <button class="button button1" type="submit" onclick="change()" id="Submit">Submit</button>
+                </div>
+                <script>
+                    /* Answer Checking */
+                    function change() {
+                        var id = document.getElementById('Card');
+                        if (document.getElementById('Ans').checked) {
+                            var green = 'rgb(117, 230, 136)';
+                            id.style.background = green;
+                            id.innerHTML = '';
+                            id.style.fontSize = '50px';
+                            id.style.color = 'white';
+                            id.style.padding = '0.5rem';
+                            id.style.maxWidth = '360px';
+                            id.style.alignContent = 'center';
+                            var right = '<div class="imageclass"><img src="/Reboot-Kerala-Hackathon-Finals/application/assets/images/right.gif" class="image2"/></div>';
+                            id.innerHTML = right + 'Correct Answer';
+                        }
+                        else {
+                            var red = 'rgb(253, 83, 83)';
+                            id.style.background = red;
+                            id.innerHTML = '';
+                            id.style.fontSize = '50px';
+                            id.style.padding = '0.5rem';
+                            id.style.maxWidth = '330px';
+                            id.style.alignContent = 'center';
+                            var wrong = '<div><img src="/Reboot-Kerala-Hackathon-Finals/application/assets/images/wrong2.gif" class="image"/></div>';
+                            id.innerHTML = wrong + 'Wrong Answer';
+                        }
+
+                    }
+                </script>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

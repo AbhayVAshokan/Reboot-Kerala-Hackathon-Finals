@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>History</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            background-color: white;
+            padding-top: 10%;
+        }
+
+        /* Quiz cards */
+        .quiz-card {
+            position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: rgb(7, 15, 31);
+            max-width: 250px;
+            min-height: 400px;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: -1rem 0rem 3rem #000;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .card-pos {
+            position: relative;
+            margin-left: -100px;
+            left: 100px;
+            top: 0.5rem;
+            transition: 2s;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+        }
+
+        .card-pos:hover {
+            top: -1rem;
+            left: 50px;
+            margin-right: 50px;
+        }
+
+        .quiz-group {
+            position: relative;
+            top: -100px;
+            left: 300px;
+            max-width: 500px;
+            padding: 3rem;
+            padding-right: 5rem;
+            padding-bottom: 3rem;
+            padding-left: 3rem;
+            display: flex;
+            overflow-y: hidden;
+            scrollbar-width: thin;
+        }
+
+        .quiz-group::-webkit-scrollbar {
+            width: 13px;
+            height: 10px;
+        }
+
+        .quiz-group::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-image: linear-gradient(to right, rgb(7, 22, 88), rgb(7, 233, 233));
+
+        }
+
+        /*Question*/
+        .question {
+            top: 0px;
+            color: rgb(255, 242, 242);
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /*Date*/
+
+        .date {
+            font-size: 30px;
+            color: rgb(14, 53, 97);
+            top: 50px;
+        }
+
+        /*Quiz deck*/
+        .quizdeck {
+            font-size: 20px;
+            color: rgb(30, 177, 54);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="date" class="date">
+        14/12/2020
+    </div>
+
+    <!--Quiz card deck-->
+
+    <div class="quizdeck" id="quizdeck">
+        <div class="quiz-group mini-card-grid">
+            <div class="card-pos">
+
+               <!--Quiz card-->
+
+                <div class="quiz-card">
+                    <div class="question">Which of the following is not a
+                        logical data-base structure?</div>
+                    <div class="answer">
+                        <br>
+                        <input type="radio" />tree<br>
+                        <br>
+                        <input type="radio" /> relational<br>
+                        <br>
+                        <input type="radio" /> network <br>
+                        <br>
+                        <input type="radio" /> chain<br>
+                    </div>
+                </div>
+            </div>
+            <div class="card-pos">
+                <div class="quiz-card">
+                    <div class="question">Which of the following is not a
+                        logical data-base structure?</div>
+                    <div class="answer">
+                        <br>
+                        <input type="radio" />tree<br>
+                        <br>
+                        <input type="radio" /> relational<br>
+                        <br>
+                        <input type="radio" /> network <br>
+                        <br>
+                        <input type="radio" /> chain<br>
+                    </div>
+                </div>
+            </div>
+            <div class="card-pos">
+                <div class="quiz-card">
+                    <div class="question">Which of the following is not a
+                        logical data-base structure?</div>
+                    <div class="answer">
+                        <br>
+                        <input type="radio" />tree<br>
+                        <br>
+                        <input type="radio" /> relational<br>
+                        <br>
+                        <input type="radio" /> network <br>
+                        <br>
+                        <input type="radio" /> chain<br>
+                    </div>
+                </div>
+            </div>
+            <div class="card-pos">
+                <div class="quiz-card">
+                    <div class="question">Which of the following is not a
+                        logical data-base structure?</div>
+                    <div class="answer">
+                        <br>
+                        <input type="radio" />tree<br>
+                        <br>
+                        <input type="radio" /> relational<br>
+                        <br>
+                        <input type="radio" /> network <br>
+                        <br>
+                        <input type="radio" /> chain<br>
+                    </div>
+                </div>
+            </div>
+            <div class="card-pos">
+                <div class="quiz-card">
+                    <div class="question">Which of the following is not a
+                        logical data-base structure?</div>
+                    <div class="answer">
+                        <br>
+                        <input type="radio" />tree<br>
+                        <br>
+                        <input type="radio" /> relational<br>
+                        <br>
+                        <input type="radio" /> network <br>
+                        <br>
+                        <input type="radio" /> chain<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
