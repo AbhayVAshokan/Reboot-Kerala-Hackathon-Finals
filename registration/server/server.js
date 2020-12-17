@@ -7,9 +7,25 @@ const {
 const app = express();
 const port = 3000 || process.env.port;
 
+// Handling CORS
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+        "Access-Control-Allow-Headers",
+        "*",
+
+    );
+    if (req.method === "OPTIONS") {
+        res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+        return res.status(200).json({
+            status: true,
+            message: "request granted",
+        });
+    }
+    next();
+});
+
 // Middlewares
-app.options('*', cors())
-app.use(cors())
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({
@@ -22,7 +38,13 @@ app.get('/', (req, res) => {
 
 var python_process;
 app.post('/start', function(req, res) {
-    let pyshell = new PythonShell('../../python/attendance/registration.py');
+    console.log('requesting python script');
+    let options = {
+        mode: "text",
+        args: ["../../python/haarcascades/haarcascade_frontalface_default.xml", "../../python/training-images/"]
+    };
+
+    let pyshell = new PythonShell('../../python/attendance/registration.py', options);
 
     pyshell.end(function(err) {
         if (err)
@@ -35,6 +57,7 @@ app.post('/start', function(req, res) {
     });
 
     python_process = pyshell.childProcess;
+    console.log('ended python script')
 });
 
 app.post('/stop', function(req, res) {

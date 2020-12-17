@@ -4,3 +4,6 @@ application/js/firebase.js
 application/js/speech-to-text.js
 script.sh
 requirements.txt
+python/training-images/
+python/attendance/__pycache__
+.vscode
