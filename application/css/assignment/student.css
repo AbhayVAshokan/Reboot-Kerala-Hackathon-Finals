@@ -25,6 +25,15 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
+.profile-pic{
+    top: 100px;
+    left: 200px;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
 .card-text{
     padding: 1.3rem 1rem;
     letter-spacing: 1px;
@@ -42,4 +51,28 @@
     left: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.class-teacher{
+    white-space: nowrap; 
+    font-family: Roboto,Arial,sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    overflow: hidden;
+}
+
+.class-tasks{
+    overflow: hidden;
+    /* padding-left: 15px !important; */
+    padding-bottom: 10px;
+    height: 100px;
+}
+.class-tasks>li{
+    /* list-style-position: inside; */
+    /* white-space: nowrap;  */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    /* height: 90px; */
 }

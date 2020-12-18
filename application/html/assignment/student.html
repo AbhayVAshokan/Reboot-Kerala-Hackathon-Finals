@@ -6,25 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../vendor/font-awesome.4.7/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../css/attendance/teacher.css">
+    <link rel="stylesheet" href="../../css/assignment/student.css">
 
-    <title>Attendance</title>
+
+    <title>Assignment</title>
     <script src="../../vendor/jquery/jquery.min.js"></script>
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <button id="back-btn" class="back-btn btn btn-lg btn-light"><i class="fa fa-angle-left"></i></button>
-    <div class="container mt-3">
-        <div class="row text-center">
-            <h4>Classes</h4>
-        </div>
-        <div id="class-container" class="d-flex flex-wrap justify-content-center">
-            <!-- Populate Classes -->
-        </div>
+    <div id="class-container" class="container row d-flex flow-wrap">
+        <!-- Populate Classes here -->
     </div>
 
     <script>
-        var teacher = require('../../js/attendance/teacher.js');
+        var student = require('../../js/assignment/student.js');
     </script>
 </body>
 </html>

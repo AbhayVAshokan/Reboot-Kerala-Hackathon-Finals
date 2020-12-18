@@ -1,0 +1,51 @@
+.back-btn{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.back-btn:hover {
+    box-shadow: 0 5px 8px rgba(0,0,0,0.15), 5px 5px 5px rgba(0,0,0,0.15);
+}
+
+.card-top{
+    background-image: url("../../assets/images/default_class2.webp");
+    position: relative;
+    max-width: 760px;
+    width: inherit;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+
+.subject-name{
+    position: relative;
+    padding : 35px 35px;
+    color: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem !important;
+}
+
+.teacher-name{
+    white-space: nowrap; 
+    font-family: Roboto,Arial,sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    overflow: hidden;
+}
+
+
+.ass-list{
+    width: 760px;
+    min-width: 200px;
+}
+
+.ass-list-elem{
+    white-space: nowrap;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

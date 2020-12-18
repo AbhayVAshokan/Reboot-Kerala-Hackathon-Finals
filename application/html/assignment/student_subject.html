@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../vendor/font-awesome.4.7/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../css/attendance/teacher.css">
+    <link rel="stylesheet" href="../../css/assignment/student_subject.css">
 
-    <title>Attendance</title>
+
+    <title>Assignment</title>
     <script src="../../vendor/jquery/jquery.min.js"></script>
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <button id="back-btn" class="back-btn btn btn-lg btn-light"><i class="fa fa-angle-left"></i></button>
-    <div class="container mt-3">
-        <div class="row text-center">
-            <h4>Classes</h4>
+    <div class="container card mt-4">
+        <div class="card-top mx-auto">
+            <div id="subject-title" class="subject-name">
+            </div>
+            <div id="subject-teacher" class="teacher-name">
+            </div>
         </div>
-        <div id="class-container" class="d-flex flex-wrap justify-content-center">
-            <!-- Populate Classes -->
+        <div class="d-flex justify-content-center">
+            <div id="assignment-container" class="list-group list-group-flush ass-list my-4">
+                <!-- Populating Assignments -->
+            </div>    
         </div>
     </div>
-
     <script>
-        var teacher = require('../../js/attendance/teacher.js');
+        var subject = require('../../js/assignment/student_subject.js');
     </script>
 </body>
 </html>

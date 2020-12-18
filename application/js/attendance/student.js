@@ -3,27 +3,31 @@ var subjectList = ['PP','DC','ML'],
     totalPercent = 75
     ;
 
-function openSubject(subName){
+module.exports.openSubject = function openSubject(subName){
     location.href = `../../html/attendance/student_subject.html?subName=${subName}`;
 }
 
-document.getElementById('subject-container').innerHTML = subjectList.map((el,index) =>{
-    return(`
-    <div class="card subject-container mx-2 my-2" onclick="openSubject('${el}')">
-        <h5 class="card-title text-center">${el}</h5>
-        
-            <div id="subject${index}-donut" class="card-img donut-container"></div>
-        <div class="d-flex justify-content-center">
-            <h6 class="card-text">23/30</h6>
+var subjectContainer = document.getElementById('subject-container');
+if(subjectContainer){
+    subjectContainer.innerHTML = subjectList.map((el,index) =>{
+        return(`
+        <div class="card subject-container mx-2 my-2" onclick="student.openSubject('${el}')">
+            <h5 class="card-title text-center">${el}</h5>            
+                <div id="subject${index}-donut" class="card-img donut-container"></div>
+            <div class="d-flex justify-content-center">
+                <h6 class="card-text">23/30</h6>
+            </div>
         </div>
-    </div>
-    `);
-}).join("");
+        `);
+    }).join("");
+}
 
-
-document.getElementById("back-btn").onclick = ()=> {
-    location.href = '../../html/index.html';
-};
+var backBtn = document.getElementById("back-btn");
+if(backBtn){
+    backBtn.onclick = ()=> {
+        location.href = '../../html/index.html';
+    };
+}
 
 var circle = new circleDonutChart('attendance-donut');
 

@@ -1,5 +1,5 @@
 // Fetch classes
-classDays = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
+classDays = ['Date 1', 'Date 2', 'Date 3', 'Date 3', 'Date 4', 'Date 5'];
 
 const urlParams = new URLSearchParams(window.location.search);
 const className = urlParams.get('className');
