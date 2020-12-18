@@ -175,7 +175,7 @@ a.menu-link {
 
 .main-header {
     background-color: rgba(22, 34, 57, 0.95);
-    height: 80px;
+    height: 70px;
     position: fixed;
     z-index: 12;
     width: 100%;
@@ -366,16 +366,17 @@ a.menu-link {
 }
 
 .main-banner .caption h6 {
-    margin-top: 0px;
+    margin-top: 30px;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
     letter-spacing: 1px;
+    z-index: 0;
 }
 
 .main-banner .caption h2 {
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: 30px;
     font-size: 64px;
     text-transform: uppercase;
@@ -444,7 +445,8 @@ section.features .col-4 {
     width: 100%;
     background-color: #0c1228;
     color: #fff;
-    padding: 40px;
+    padding: 30px;
+    padding-top: 15px;
 }
 
 .features-content:hover {
@@ -970,7 +972,7 @@ section.video .left-content span {
 }
 
 section.video .left-content h4 {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 30px;
     color: #fff;
     font-weight: 800;
