@@ -15,7 +15,7 @@ function validate() {
 function checkEmail() {
 
     var email = document.getElementById('txtEmail').value;
-    var filter =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var filter =  /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
     if (!filter.test(email)) {
     alert('Please provide a valid email address!');
