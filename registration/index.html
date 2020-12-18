@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Student Registeration</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <script type="application/x-javascript">
-        addEventListener("load", function() {
-            setTimeout(hideURLbar, 0);
-        }, false);
+      addEventListener("load", function() {
+          setTimeout(hideURLbar, 0);
+      }, false);
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
+      function hideURLbar() {
+          window.scrollTo(0, 1);
+      }
     </script>
+    <script defer src="face-api.min.js"></script>
     <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- main -->
     <div class="main-w3layouts wrapper">
-        <h1>Student Registeration</h1>
-        <div class="main-agileinfo">
-            <div class="agileits-top">
-                <form action="" method="post" id="registration-form">
-                    <input id="name" class="text" type="text" name="Student name" placeholder="Name" required="">
-                    <input id="regno" class="text" type="text" name="Regno" placeholder="Registeration no" required="">
-                    <input id="dept" class="text" type="text" name="Department" placeholder="Department" required="">
-                    <input id="collegeid" class="text" type="text" name="College ID" placeholder="College ID" required="">
-                    <input id="mobile" class="text" type="text" name="Mobile" placeholder="Mobile" required="">
-                    <input id="email" class="text email" type="email" name="email" placeholder="Email" required="">
-                    <input id="password" class="text" type="password" name="password" placeholder="Password" required="">
-                    <input id="confirm-password" class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
-                    <div class="wthree-text">
-                        <div class="clear"> </div>
-                    </div>
-                    <input type="button" value="CAPTURE IMAGES" id="capture-btn" />
-                    <input type="submit" value="REGISTER">
-                </form>
-                <!-- <p>Already registered? <a href="#"> Login Now!</a></p> -->
+      <h1>Student Registeration</h1>
+      <div class="main-agileinfo">
+        <div class="agileits-top">
+          <form action="" method="post" id="registration-form">
+            <input
+              id="name"
+              class="text"
+              type="text"
+              name="Student name"
+              placeholder="Name"
+              required=""
+            />
+            <input
+              id="regno"
+              class="text"
+              type="text"
+              name="Regno"
+              placeholder="Registeration no"
+              required=""
+            />
+            <input
+              id="dept"
+              class="text"
+              type="text"
+              name="Department"
+              placeholder="Department"
+              required=""
+            />
+            <input
+              id="collegeid"
+              class="text"
+              type="text"
+              name="College ID"
+              placeholder="College ID"
+              required=""
+            />
+            <input
+              id="mobile"
+              class="text"
+              type="text"
+              name="Mobile"
+              placeholder="Mobile"
+              required=""
+            />
+            <input
+              id="email"
+              class="text email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required=""
+            />
+            <input
+              id="password"
+              class="text"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required=""
+            />
+            <input
+              id="confirm-password"
+              class="text w3lpass"
+              type="password"
+              name="password"
+              placeholder="Confirm Password"
+              required=""
+            />
+            <div class="wthree-text">
+              <div class="clear"></div>
             </div>
+            <input style="display: none" id="myfile" type="file" multiple />
+            <input type="button" value="CAPTURE IMAGES" id="capture-btn" />
+            <input type="submit" value="REGISTER" />
+          </form>
+          <!-- <p>Already registered? <a href="#"> Login Now!</a></p> -->
         </div>
+      </div>
 
-        <ul class="colorlib-bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-    <script src="./script.js"></script>
-</body>
-
+    <script defer src="./script.js"></script>
+  </body>
 </html>
