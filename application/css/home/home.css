@@ -174,7 +174,7 @@ a.menu-link {
 }
 
 .main-header {
-    background-color: rgba(22, 34, 57, 0.95);
+    background-color: rgba(22, 34, 57, 0.95);;
     height: 70px;
     position: fixed;
     z-index: 12;
@@ -249,7 +249,7 @@ a.menu-link {
 .main-menu li .sub-menu {
     position: absolute;
     width: 160px;
-    background-color: #18233a;
+    background-color:whitesmoke;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
@@ -349,7 +349,7 @@ a.menu-link {
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(22, 34, 57, 0.85);
+    background-color:#c7ddf0;
     top: 0;
     left: 0;
     bottom: 7px;
@@ -537,7 +537,7 @@ section.features .col-4 {
 
 section.why-us {
     background-image: url(../images/choosing-bg.jpg);
-    background-color: #172238;
+    background-color: whitesmoke;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
@@ -679,7 +679,7 @@ section.coming-soon {
     background-image: url(../images/coming-soon-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #172238;
+    background-color: whitesmoke;
     padding: 120px 0px;
 }
 
@@ -722,7 +722,7 @@ section.coming-soon .continer .counter .seconds {
     font-weight: 800;
     letter-spacing: 1px;
     color: #fff;
-    background-color: rgba(250, 250, 250, 0.1);
+    background-color: whitesmoke;
 }
 
 @media screen and (max-width: 992px) {
@@ -792,7 +792,7 @@ section.coming-soon .top-content {
 section.coming-soon .top-content h6 {
     font-size: 14px;
     color: #fff;
-    background-color: rgba(250, 250, 250, 0.2);
+    background-color: whitesmoke;
     padding: 40px;
     text-align: center;
     line-height: 24px;
@@ -804,7 +804,7 @@ section.coming-soon .top-content h6 em {
 }
 
 section.coming-soon form {
-    background-color: rgba(250, 250, 250, 0.1);
+    background-color: whitesmoke;
     padding: 60px 40px;
     width: 100%;
     text-align: center;
@@ -813,7 +813,7 @@ section.coming-soon form {
 section.coming-soon form input {
     width: 100%;
     height: 40px;
-    background-color: rgba(250, 250, 250, 0.1);
+    background-color: wh;
     border-radius: 0px;
     border: none;
     outline: none;
