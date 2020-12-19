@@ -25,7 +25,7 @@ if(subjectContainer){
 var backBtn = document.getElementById("back-btn");
 if(backBtn){
     backBtn.onclick = ()=> {
-        location.href = '../../html/index.html';
+        location.href = '../../html/home.html';
     };
 }
 
