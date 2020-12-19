@@ -1,10 +1,11 @@
 body {
 
     background-image: url('../assets/images/login_background.jpg');
-    height: 97vh;
-    background-size: 2000px 1020px;
+    /* height: 97vh; */
+    /* background-size: 2000px 1020px; */
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     font: 600 16px/18px 'Open Sans', sans-serif;
 }
@@ -36,8 +37,10 @@ a {
     margin: auto;
     max-width: 500px;
     min-height: 425px;
-    top: 20%;
-    left: 32%;
+    /* top: 20%; */
+    /* left: 32%; */
+    margin-left: calc(50vw - 250px);
+    margin-top: calc(50vh - 212px);
     position: absolute;
     box-sizing: border-box;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);

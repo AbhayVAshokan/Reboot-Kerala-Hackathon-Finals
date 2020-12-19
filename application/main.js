@@ -8,7 +8,7 @@ const {
 // Function to create the main window
 function createWindow() {
     const win = new BrowserWindow({
-        fullscreen: true,
+        // fullscreen: true,
         title: 'Name of application',
         webPreferences: {
             nodeIntegration: true,
@@ -25,12 +25,12 @@ function createWindow() {
 
 app.whenReady().then(createWindow);
 
-// disable shortcut keys
-app.on('ready', () => {
-    globalShortcut.register('alt+tab', () => {
-        return false;
-    });
-})
+// // disable shortcut keys
+// app.on('ready', () => {
+//     globalShortcut.register('alt+tab', () => {
+//         return false;
+//     });
+// })
 
 
 // macOS requirements
