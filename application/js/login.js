@@ -27,3 +27,8 @@ function checkEmail() {
             location.href="home.html";
             return true;
 }
+
+
+function gotoDashboard() {
+    document.location='home.html';
+}
