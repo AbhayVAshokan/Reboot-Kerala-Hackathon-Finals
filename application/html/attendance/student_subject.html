@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome.4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/attendance/student_subject.css">
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="mb-3">
+        <button id="back-btn" class="back-btn btn btn-lg btn-light"><i class="fa fa-lg fa-angle-left"></i></button>
+    </div>
+    <div class="container card">
+        <h3 id="subject-name" class="card-title text-center mt-4 mb-0"></h4>
+        <div class="card-body mb-2 mt-0">
+
+            <div class="wrapper">
+                <div class="container-calendar">
+                    <h4 id="monthAndYear"></h3>
+                    <div class="button-container-calendar">
+                        <button id="previous-btn" ><i class="fa fa-angle-left"></i></button>
+                        <button id="next-btn" ><i class="fa fa-angle-right"></i></button>
+                    </div>
+                    
+                    <table class="table-calendar" id="calendar" data-lang="en">
+                        <thead id="thead-month"></thead>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                    
+                    <div class="d-flex justify-content-center">
+                        <div class="footer-container-calendar">
+                            <label for="month">Jump To: </label>
+                            <select id="month" onchange="jump()">
+                                <option value=0>Jan</option>
+                                <option value=1>Feb</option>
+                                <option value=2>Mar</option>
+                                <option value=3>Apr</option>
+                                <option value=4>May</option>
+                                <option value=5>Jun</option>
+                                <option value=6>Jul</option>
+                                <option value=7>Aug</option>
+                                <option value=8>Sep</option>
+                                <option value=9>Oct</option>
+                                <option value=10>Nov</option>
+                                <option value=11>Dec</option>
+                            </select>
+                            <select id="year" onchange="jump()"></select>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        require('../../js/attendance/student_subject.js');
+    </script>
+</body>
+</html>
