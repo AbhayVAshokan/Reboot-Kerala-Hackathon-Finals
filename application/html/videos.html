@@ -9,41 +9,71 @@
 
     <style>
         body {
-            background-color: white;
+            background-color: rgb(7, 15, 31);
+        }
+
+        /*Video*/
+        .video-card {
+            position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: rgb(7, 15, 31);
+            width: 450px;
+            height: 350px;
+            border-radius: 16px;
+            box-shadow: -1rem 0rem 3rem #000;
+            display: flex;
+            flex-direction: column;
+            border-color: rgb(229, 228, 143);
+            border-style: solid;
+
+        }
+
+        .video-card-header {
+            position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: rgb(231, 233, 107);
+            width: 100%;
+            height: 70px;
+            border-top-right-radius: 14px;
+            border-top-left-radius: 14px;
+            box-shadow: -1rem 0rem 3rem #000;
+            display: flex;
+            flex-direction: column;
+            color: rgba(105, 70, 23, 0.76);
+            font-size: 15px;
+            padding: 5px;
+            padding-bottom: 0px;
+
+
+        }
+
+        /*Title*/
+        .title {
+            padding: 3rem;
+            color: rgb(216, 213, 213);
+            align-self: center;
+            margin-left: 600px;
         }
     </style>
 </head>
 
 <body>
+    <div class="title">
+        <h2>Shared Videos</h2>
+    </div>
+    <!--Video cards-->
     <div class="container">
-        <h2>Videos</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Topic</th>
-                    <th>Video</th>
-                    <th>comments</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10-12-2020</td>
-                    <td>Multicast</td>
-
-                    <!-- Vedio -->
-
-                    <td>
-                        <video width="320" height="180" controls>
-                            <source
-                                src="/Reboot-Kerala-Hackathon-Finals/application/assets/video/vlc-record-2020-12-15-12h44m23s-Angry.Birds.2016.720p.BluRay.x264-[YTS.AG].mp4-.mp4"
-                                type="video/mp4">
-                        </video>
-                    </td>
-                    <td>No comments</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="video-card">
+            <div class="video-card-header">
+                <p><b>18-12-2020</b></p>
+                <p><b>Multithreading</b></p>
+            </div>
+            <video width="440" height="250" controls>
+                <source src="/Reboot-Kerala-Hackathon-Finals/application/assets/video/What is Multithreading_.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+    </div>
 </body>
 
 </html>
