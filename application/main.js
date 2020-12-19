@@ -17,7 +17,7 @@ function createWindow() {
         },
     });
 
-    win.loadFile('./html/index.html');
+    win.loadFile('./html/login.html');
 
     // uncomment this line for debug tools
     // win.webContents.openDevTools();
