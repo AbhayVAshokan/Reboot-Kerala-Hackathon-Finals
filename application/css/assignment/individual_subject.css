@@ -1,0 +1,47 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.back-btn{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.back-btn:hover {
+    box-shadow: 0 5px 8px rgba(0,0,0,0.15), 5px 5px 5px rgba(0,0,0,0.15);
+}
+.btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.subject-name{
+    top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+}
+
+.due-date{
+    text-align: right;
+    color: rgb(97, 97, 97);
+}
+
+.doc-item{
+    margin-top: 10px;
+    align-content: center;
+    /* width: 90%; */
+    height: fit-content;
+    /* padding: 5px 10px; */
+}
+
+.cross-cont{
+    align-self: center;
+    text-align: center;
+}
+.cross-cont>p{
+    padding-top: 8px;
+    padding-left: 10px;
+}
