@@ -7,7 +7,7 @@ var notifs = {
     CSA:[new Date(2020,11,23,10,30,0,0)],
 };
 document.getElementById("back-btn").onclick = ()=> {
-    location.href = '../../html/index.html';
+    location.href = '../../html/home.html';
 };
 
 module.exports.openClass = function openClass(className, teacher){
