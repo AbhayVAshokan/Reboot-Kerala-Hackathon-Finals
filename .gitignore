@@ -7,3 +7,6 @@ requirements.txt
 python/training-images/
 python/attendance/__pycache__
 .vscode
+python/attendance/model.yml
+python/attendance/labels.pkl
+python/attendance/training-images

@@ -22,7 +22,7 @@ def captureImages(reg_no, name, xml_path, image_path):
         xml_path = '../haarcascades/haarcascade_frontalface_default.xml'
 
     if image_path is None:
-        image_path = './training-images'
+        image_path = './training-images/'
 
     print(xml_path)
     print(image_path)
@@ -39,8 +39,8 @@ def captureImages(reg_no, name, xml_path, image_path):
         face = None
         faces = face_cascade.detectMultiScale(gray, 1.2, 5)
         for (x, y, w, h) in faces:
+            face = img[y: y + h, x: x + w]
             img = cv2.rectangle(img, (x, y), (x+w, y+h), (255, 255, 255), 1)
-            face = gray[y: y + h, x: x + w]
             cv2.putText(img, name, (x, y - 5),
                         cv2.FONT_HERSHEY_TRIPLEX, 0.5, (85, 224, 185), 1)
 
@@ -58,29 +58,12 @@ def captureImages(reg_no, name, xml_path, image_path):
             break
 
 
-def loadImages():
-    # faces = []
-
-    # for student_dir in os.listdir('training-images/'):
-    #     faces.append(list(map(lambda img: 'training-images/' + student_dir + '/' + img, os.listdir('training-images/' + student_dir + '/'))))
-
-    faceSamples = []
-    Ids = []
-
-    for imagePath in imagePaths:
-        pilImage = Image.open(imagePath)
-
-        imageNp = np.array(pilImage, 'uint8')
-        Id = int(os.path.split(imagePath)[-1].split(".")[1])
-    return faceSamples, Ids
-
-
-def train():
-    loadImages()
-
-
+# Command line arguments are required for running the python script via the NodeJS server.
 args = sys.argv
-if len(args) == 3:
-    captureImages(reg_no="17B201", name="Abhay V Ashokan", xml_path=args[1], image_path=args[2])
+if len(args) > 1:
+    captureImages(reg_no=args[4], name=args[3],
+                  xml_path=args[1], image_path=args[2])
 else:
-    captureImages(reg_no="17B201", name="Abhay V Ashokan", xml_path=None, image_path=None)
+    captureImages(reg_no="17B201", name="Abhay V Ashokan",
+                  xml_path=None, image_path=None)
+
